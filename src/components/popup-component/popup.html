@@ -1,0 +1,12 @@
+<div id="popup" class="style-div">
+	<div class="balloon">
+		<span class="spot-title">
+			{{ estabelecimento?.nome }}
+		</span>
+		<br />
+		<div class="spot-body">
+			Nota: {{ estabelecimento?.nota }}
+			<button ion-button class="show-detail-button" (click)="showPontoDetail(ponto)">Detalhes</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,67 @@
+nav-header {
+
+}
+.style-div {
+	border-radius: 0px;
+	width: calc(100% + 40px);
+	height: calc(100% + 2px);
+	background-color: #5292a0;
+	color: white;
+	margin: -14px -20px;
+	font-weight: bold;
+	min-width: 200px;
+	min-height: 30px;
+}
+
+page-mapa .leaflet-popup-tip {
+	background-color: #5292a0 !important;
+}
+
+.spot-title{
+	margin-top: 20px;
+	margin-left: 8px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.spot-body{
+	margin-top: 10px;
+	margin-left: 8px;
+}
+
+.show-detail-button{
+	width: 80px;
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 30px;
+	margin-bottom: 5px;
+	background-color: #1f4361;
+}
+
+.button-ios.activated {
+	background-color: #122c42;
+}
+
+.button-md.activated {
+	background-color: #122c42;
+}
+
+.balloon{
+	padding: 4px;
+	padding-top: 8px;
+}
+
+.equipamento-item{
+	margin-top: 5px;
+	margin-left: 15px;
+}
+
+.equipamento-name{
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.equipamento-tipo {
+	font-size: 15px;
+	font-weight: 600;
+}

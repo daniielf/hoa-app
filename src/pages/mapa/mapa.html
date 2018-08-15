@@ -1,0 +1,8 @@
+<ion-content>
+  <div class="mapContent">
+    <div #map id="map"></div>
+  </div>
+</ion-content>
+<div [hidden]="true" *ngFor="let item of estabelecimentos; let i = index">
+  <popup id="marker-{{i}}" [estabelecimento]="item"></popup>
+</div>

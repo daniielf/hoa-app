@@ -1,0 +1,27 @@
+<ion-content class="content">
+  <div class="list-content">
+    <div class="buscar-content">
+      <!-- <ion-item> -->
+        <ion-searchbar class="search" placeholder="Buscar..." (ionInput)="onInput($event)" [(ngModel)]="searchText"></ion-searchbar>
+        <!-- <ion-icon name="magnifier"></ion-icon> -->
+      <!-- </ion-item> -->
+    </div>
+    <ion-list>
+      <div class="h20"></div>
+      <ion-row class="event-row" *ngFor="let evento of eventosFiltered; let i = index">
+        <ion-col class="img-col" col-4>
+          <img class="img" src="https://scontent.fsdu2-2.fna.fbcdn.net/v/t1.0-9/39099567_2272050332810961_5995044140646137856_n.jpg?_nc_cat=0&oh=c46776ea8434e0d1d5eadb3383bbe75f&oe=5C00753F"/>
+        </ion-col>
+        <ion-col col-8>
+          <span class="event-title">{{ evento }}</span>
+          <br />
+          <span class="info"> Estabelecimento {{ i + 1 }} </span>
+          <span class="info"> Confirmados: {{ (i + 1)*((i + 1) + 22) - 12 }} </span>
+          <br />
+          <br />
+          <span class="info-time"> Início 20:00 - Término 04:00 </span>
+        </ion-col>
+      </ion-row>
+    </ion-list>
+  </div>
+</ion-content>

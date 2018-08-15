@@ -1,0 +1,76 @@
+<ion-content class="bg-login">
+<div class="overlay">
+  <div class="center padding-top-10-percent">
+    <img src="assets/imgs/logo-white.png" class="logo-white-login">
+  </div>
+  <!--TEXTOS-->
+  <ion-slides #slide class="slider">
+
+    <ion-slide class="slide-class">
+        <!--TITULO-->
+        <h5 class="gray center bold no-margin">
+          Que Bom te ver Aqui
+        </h5>
+        <!--SUBTITULO-->
+        <p class="gray center light no-margin mg-top-5">
+          Entre com sua conta para continuar
+        </p>
+      <div class="padding-20">
+        <ion-item class="bg-transparent no-padding mg-top-30">
+          <ion-label stacked class="snow bold">E-mail</ion-label>
+          <ion-input type="email" class="snow" [(ngModel)]="loginForm.email"></ion-input>
+        </ion-item>
+
+        <ion-item class="bg-transparent no-padding mg-top-20">
+          <ion-label stacked class="snow bold">Senha</ion-label>
+          <ion-input type="password" class="snow" [(ngModel)]="loginForm.password"></ion-input>
+        </ion-item>
+        <!--CTA-->
+        <div class="ctaLogin center bold mg-top-30" (click)="fazerLogin()">
+          Entrar
+        </div>
+        <!--NOVA CONTA-->
+        <div class="txtRegistrar bold mg-top-20 center" (click)="navRegister()">
+          Quero criar uma nova conta
+        </div>
+      </div>
+    </ion-slide>
+    <ion-slide class="slide-class">
+      <!--TITULO-->
+      <h5 class="gray center bold no-margin">
+        Eba! Vamos lá.
+      </h5>
+      <!--SUBTITULO-->
+      <p class="gray center light no-margin mg-top-5">
+        Crie suas credenciais para acessar o app
+      </p>
+      <!--FORMS e CTA-->
+      <div class="padding-20">
+        <ion-item class="bg-transparent no-padding mg-top-30">
+          <ion-label stacked class="snow bold">Como você se chama?</ion-label>
+          <ion-input type="text" class="snow" [(ngModel)]="registerForm.name"></ion-input>
+        </ion-item>
+
+        <ion-item class="bg-transparent no-padding mg-top-20">
+          <ion-label stacked class="snow bold">Qual é o seu e-mail?</ion-label>
+          <ion-input type="email" class="snow" [(ngModel)]="registerForm.email"></ion-input>
+        </ion-item>
+
+        <ion-item class="bg-transparent no-padding mg-top-20">
+          <ion-label stacked class="snow bold">Escolha uma super senha!</ion-label>
+          <ion-input type="password" class="snow" [(ngModel)]="registerForm.password"></ion-input>
+        </ion-item>
+        <!--CTA-->
+        <div class="ctaRegister center bold mg-top-30" (click)="criarNovaConta()">
+          Cadastrar
+        </div>
+        <!--NOVA CONTA-->
+        <div class="txtRegistrar bold mg-top-20 center" (click)="navLogin()">
+          Já tenho uma conta
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+</div>
+</ion-content>
